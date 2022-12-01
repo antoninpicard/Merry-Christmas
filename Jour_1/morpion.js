@@ -13,15 +13,18 @@ const startGame = () => {
 }
 
 
-player1 = document.getElementsByClassName('player1').value;
-player2 = document.getElementsByClassName('player2').value;
+
 
 document.querySelector('#changeName').addEventListener('click',changeValue)
 
 
 function changeValue() {
-    
+    player1 = document.querySelector('#player1').value;
+    player2 = document.querySelector('#player2').value;
+    document.querySelector('h1').innerText = 'GO !'
+    console.log('changeValue OK !')
 }
+
 
 
 
@@ -33,10 +36,23 @@ function boxClicked(e){
 
         if(playerHasWon() !==false){
             if(currentPlayer == X_TEXT){
-                currentPlayer = player1
+                if(player1 == ""){
+                    player1 = "X"
+                    currentPlayer = player1
+                }
+                else{
+                    currentPlayer = player1
+                }
+                
             }
-            else{
-                currentPlayer = player2
+            else if(currentPlayer == O_TEXT){
+                if(player2 == ""){
+                    player2 = "O"
+                    currentPlayer = player2
+                }
+                else{
+                    currentPlayer = player2
+                }
             }
             playerText.innerHTML = `${currentPlayer} a gagné !`
             let winning_blocks = playerHasWon()
@@ -81,7 +97,6 @@ function restart(){
     boxes.forEach(box => {
         box.innerText = ''
         box.style.backgroundColor=''
-        
     })
 
     currentPlayer = X_TEXT;
