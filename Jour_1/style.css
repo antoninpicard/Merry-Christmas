@@ -25,7 +25,10 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #37505C;
+    background-image: url('https://wp.plansoft.de/wp-content/uploads/2021/12/n4_news_weihnachten.jpg');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 #gameboard {
