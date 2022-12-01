@@ -3,14 +3,19 @@ let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
 let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
 
-const O_TEXT = "O"
-const X_TEXT = "X"
+var O_TEXT = "O"
+var X_TEXT = "X"
 let currentPlayer = X_TEXT
 let spaces = Array(9).fill(null)
 
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked));
 }
+
+
+player1 = document.getElementsByClassName('player1');
+player2 = document.getElementsByClassName('player2');
+
 
 function boxClicked(e){
     const id = e.target.id;
@@ -59,10 +64,11 @@ restartBtn.addEventListener('click', restart)
 
 function restart(){
     spaces.fill(null)
-
+    document.querySelector('h1').innerHTML = 'Morpion Javascript'
     boxes.forEach(box => {
         box.innerText = ''
         box.style.backgroundColor=''
+        
     })
 
     currentPlayer = X_TEXT;
