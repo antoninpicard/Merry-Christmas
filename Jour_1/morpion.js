@@ -1,7 +1,6 @@
 let playerText = document.getElementById('playerText')
 let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
-
 let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
 
 const O_TEXT = "O"
@@ -21,7 +20,7 @@ function boxClicked(e){
         e.target.innerText = currentPlayer;
 
         if(playerHasWon() !==false){
-            playerText.innerHTML = `${currentPlayer} has won!`
+            playerText.innerHTML = `${currentPlayer} a gagné !`
             let winning_blocks = playerHasWon()
 
             winning_blocks.map( box => boxes[box].style.backgroundColor=winnerIndicator)
@@ -63,6 +62,7 @@ function restart(){
 
     boxes.forEach(box => {
         box.innerText = ''
+        box.style.backgroundColor=''
     })
 
     currentPlayer = X_TEXT;
