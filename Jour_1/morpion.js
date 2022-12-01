@@ -13,18 +13,31 @@ const startGame = () => {
 }
 
 
-player1 = document.getElementsByClassName('player1');
-player2 = document.getElementsByClassName('player2');
+player1 = document.getElementsByClassName('player1').value;
+player2 = document.getElementsByClassName('player2').value;
+
+document.querySelector('#changeName').addEventListener('click',changeValue)
+
+
+function changeValue() {
+    
+}
+
 
 
 function boxClicked(e){
     const id = e.target.id;
-
     if(!spaces[id]){
         spaces[id] = currentPlayer;
         e.target.innerText = currentPlayer;
 
         if(playerHasWon() !==false){
+            if(currentPlayer == X_TEXT){
+                currentPlayer = player1
+            }
+            else{
+                currentPlayer = player2
+            }
             playerText.innerHTML = `${currentPlayer} a gagné !`
             let winning_blocks = playerHasWon()
 
