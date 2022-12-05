@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f4c531;
+  background-color: #EA4630;
 }
 .wrapper {
   box-sizing: content-box;
@@ -52,7 +52,7 @@ body {
   backface-visibility: hidden;
 }
 .card-before {
-  background-color: #f4c531;
+  background-color: #146B3A;
   font-size: 2.8em;
   font-weight: 600;
 }
@@ -74,7 +74,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #f4c531;
+  background-color: #EA4630;
   top: 0;
 }
 button {
