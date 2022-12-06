@@ -1,3 +1,8 @@
+//fait avec le tuto directement sur lors site officiel.
+
+
+
+
 import (
 	"bytes"
 	"fmt"
