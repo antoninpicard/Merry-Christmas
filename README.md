@@ -9,6 +9,11 @@
 ![Capture d’écran 2022-12-02 140734](https://user-images.githubusercontent.com/95379201/205299999-3bbf4043-4822-4236-9443-761d24b66b6d.png)
 
 # JOUR 3
-# Snake en C avec un tuto
+# Snake en C avec un tuto🐍
 ![Capture d’écran 2022-12-04 111214](https://user-images.githubusercontent.com/95379201/205485130-e72e1e1d-9a12-4b23-9eba-a6a08094cc9e.png)
+
+# JOUR 4
+# Memory en JavaScript🃏
+![Capture d’écran 2022-12-05 115013](https://user-images.githubusercontent.com/95379201/205619393-7c87413a-b786-4364-a332-ef431b06a3ff.png)
+
 
